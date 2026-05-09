@@ -1434,6 +1434,90 @@ footer .footer-mark {
   }
 }
 
+/* ──────────────── MOBILE FIXES ──────────────── */
+
+/* Hero: allow long words to wrap, prevent horizontal overflow */
+.hero h1 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Work: reset grid-column spans on mobile — they create implicit columns and break layout */
+@media (max-width: 899px) {
+  .work-item.span-7,
+  .work-item.span-5,
+  .work-item.span-12 {
+    grid-column: auto;
+    margin-top: 0;
+  }
+}
+
+/* Marquee: reduce size on small screens */
+@media (max-width: 600px) {
+  .marquee-track span {
+    font-size: 22px;
+    gap: 28px;
+  }
+  .marquee-track {
+    gap: 28px;
+  }
+}
+
+/* Process: min-width overflows narrow phones */
+@media (max-width: 899px) {
+  .process-list button {
+    min-width: 0;
+    width: 100%;
+  }
+  .process-panel {
+    padding: 28px 20px;
+  }
+}
+
+/* About: stack the two placeholder images on very small screens */
+@media (max-width: 480px) {
+  .about-images {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Contact: reduce oversized info values on mobile */
+@media (max-width: 600px) {
+  .contact-info .info-row a,
+  .contact-info .info-row .val {
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+  .form {
+    padding: 28px 20px;
+  }
+}
+
+/* Nav: prevent logo overflow on very small screens */
+@media (max-width: 380px) {
+  .logo b {
+    font-size: 13px;
+  }
+  .logo small {
+    display: none;
+  }
+}
+
+/* Section: tighten vertical padding on small screens */
+@media (max-width: 480px) {
+  .section-pad {
+    padding: 72px 0;
+  }
+  .section-head {
+    margin-bottom: 48px;
+  }
+}
+
+/* Footer: ensure wordmark clips cleanly */
+footer {
+  overflow-x: clip;
+}
+
 /* ──────────────── REDUCED MOTION ──────────────── */
 
 @media (prefers-reduced-motion: reduce) {

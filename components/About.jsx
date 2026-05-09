@@ -42,6 +42,7 @@ export default function About() {
               ))}
             </div>
             <div
+              className="about-images"
               style={{
                 marginTop: '48px',
                 display: 'grid',
