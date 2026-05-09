@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="footer-mark">Website/Solutions</div>
+        <div className="footer-mark">Website/<wbr />Solutions</div>
         <div className="footer-cols">
           <div>
             <h5>{s.footer.cols.studio}</h5>
