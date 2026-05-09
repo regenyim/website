@@ -9,6 +9,10 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="footer-mark">Website/<wbr />Solutions</div>
+        <div className="footer-mark-mobile">
+          <span className="footer-mark-mobile-abbr">W/S</span>
+          <span className="footer-mark-mobile-name">Website · Solutions</span>
+        </div>
         <div className="footer-cols">
           <div>
             <h5>{s.footer.cols.studio}</h5>
