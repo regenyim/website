@@ -1340,8 +1340,9 @@ footer .footer-mark {
   }
   .footer-mark-mobile {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 16px;
     padding: 40px 0 24px;
     border-bottom: 1px solid rgba(250, 250, 247, 0.18);
   }
@@ -1351,6 +1352,7 @@ footer .footer-mark {
     letter-spacing: -0.04em;
     line-height: 1;
     color: var(--bg);
+    flex-shrink: 0;
   }
   .footer-mark-mobile-name {
     font-family: 'JetBrains Mono', monospace;
@@ -1358,6 +1360,7 @@ footer .footer-mark {
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: rgba(250, 250, 247, 0.5);
+    padding-bottom: 6px;
   }
 }
 
