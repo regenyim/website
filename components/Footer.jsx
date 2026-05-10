@@ -40,8 +40,6 @@ export default function Footer() {
             <ul>
               <li><a href="#">Instagram ↗</a></li>
               <li><a href="#">LinkedIn ↗</a></li>
-              <li><a href="#">Are.na ↗</a></li>
-              <li><a href="#">Read.cv ↗</a></li>
             </ul>
           </div>
           <div>

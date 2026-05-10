@@ -82,9 +82,7 @@ export default function Contact() {
                 <div className="lbl">{s.contact.labels.follow}</div>
                 <div className="social-row" style={{ marginTop: '8px' }}>
                   <a href="#">Instagram ↗</a>
-                  <a href="#">Are.na ↗</a>
                   <a href="#">LinkedIn ↗</a>
-                  <a href="#">Read.cv ↗</a>
                 </div>
               </div>
             </div>

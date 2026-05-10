@@ -8,8 +8,8 @@ import Placeholder from './Placeholder';
 export default function Hero() {
   const s = useT();
   const [statsRef, statsInView] = useInView();
-  const sitesBuilt = useCounter(120, '+', statsInView);
-  const happy = useCounter(48, '', statsInView);
+  const sitesBuilt = useCounter(12, '+', statsInView);
+  const happy = useCounter(10, '', statsInView);
   const avg = useCounter(4.9, '', statsInView);
 
   return (
